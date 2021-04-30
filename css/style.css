@@ -95,3 +95,10 @@ section.missao-visao-valores article h2 {
 section.missao-visao-valores article {
     padding: 15px 30px;
 }
+
+/* SERVIÇOS */
+section.desenvolvimento .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
