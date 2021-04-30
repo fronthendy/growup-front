@@ -59,3 +59,20 @@ footer {
     background-color: #C4C4C4;
     padding: 10px;
 }
+
+/* SOBRE */
+section.introducao-sobre {
+    padding: 50px 0;
+}
+
+section.introducao-sobre h1 {
+    color: #00796B;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.introducao-sobre .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
