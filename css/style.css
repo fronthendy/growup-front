@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: #9B9B9B;
 }
 
 header {
@@ -97,8 +98,21 @@ section.missao-visao-valores article {
 }
 
 /* SERVIÇOS */
-section.desenvolvimento .container {
+section.desenvolvimento .container,
+section.marketing .container,
+section.consultoria-ux .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0;
+}
+
+section.marketing .container {
+    flex-direction: row-reverse;
+}
+
+main h1 {
+    color: #00796B;
+    font-size: 50px;
+    text-transform: uppercase;
 }
