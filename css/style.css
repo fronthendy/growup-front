@@ -81,3 +81,17 @@ section.video-sobre iframe {
     width: 100%;
     height: 600px;
 }
+
+section.missao-visao-valores {
+    text-align: center;
+}
+
+section.missao-visao-valores article h2 {
+    font-size: 30px;
+    color: #00796B;
+    text-transform: uppercase;
+}
+
+section.missao-visao-valores article {
+    padding: 15px 30px;
+}
