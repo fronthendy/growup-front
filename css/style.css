@@ -129,9 +129,16 @@ main h1 {
 }
 
 .contato form input:not([type="radio"]):not([type="checkbox"]),
-.contato form textarea {
+.contato form textarea,
+.contato form select {
     width: 100%;
     padding: 5px;
+}
+
+.contato form input:not([type="radio"]):not([type="checkbox"]):focus,
+.contato form textarea:focus,
+.contato form select:focus {
+    outline-color: #00796B;
 }
 
 .contato form fieldset {
