@@ -64,9 +64,37 @@
                             <label for="urgencia_nao">Não</label>
                         </fieldset>
 
+                        <label for="data_entrega">Data de Entrega</label>
+                        <input type="date" name="data_entrega" id="data_entrega">
 
                         <label for="descricao">Descrição</label>
                         <textarea name="descricao" id="descricao"></textarea>
+
+                        <label for="anexos">Anexos</label>
+                        <input type="file" name="anexos" id="anexos">
+
+                        <label for="publico_alvo">Qual é o publico alvo do seu projeto?</label>
+                        <input type="text" name="publico_alvo" id="publico_alvo">
+
+                        <label for="forma_pagamento">Forma de pagamento</label>
+                        <select name="forma_pagamento" id="forma_pagamento" required>
+                            <option selected disabled>Selecione uma opção</option>
+                            <option value="Débito">Débito</option>
+                            <option value="Crédito">Crédito</option>
+                            <option value="Transferencia bancária">Transferencia bancária</option>
+                            <option value="Boleto">Boleto</option>
+                        </select>
+
+                        <label for="origem_cliente">Como conheceu a Grow Up?</label>
+                        <select name="origem_cliente" id="origem_cliente">
+                            <option selected disabled>Selecione uma opção</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Google">Google</option>
+                            <option value="Amarelinho">Amarelinho</option>
+                            <option value="Outro">Outro</option>
+                        </select>
 
                         <button type="submit">Enviar</button>
                     </form>
