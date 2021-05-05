@@ -227,4 +227,33 @@ main h1 {
 
 .img-destaque {
     animation: flutuar 3s infinite;
+    width: 500px;
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    section.banner .container {
+        flex-wrap: wrap;
+    }
+
+    section.banner .container .texto {
+        text-align: center;
+    }
+
+    section.banner {
+        padding: 0 40px 40px;
+    }
+
+}
+
+@media (max-width: 515px) {
+    header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul {
+        padding: 0;
+        margin: 0;
+    }
 }
