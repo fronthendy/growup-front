@@ -232,8 +232,14 @@ main h1 {
 }
 
 @media (max-width: 900px) {
-    section.banner .container {
+
+    section.banner .container,
+    section.introducao-sobre .container .intro {
         flex-wrap: wrap;
+    }
+
+    section.introducao-sobre {
+        padding: 0 40px;
     }
 
     section.banner .container .texto {
