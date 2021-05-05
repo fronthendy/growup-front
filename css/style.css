@@ -51,7 +51,7 @@ header nav ul li:hover a:after {
     width: 100%;
 }
 
-header nav ul li a {
+header nav ul li a:any-link {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -61,6 +61,10 @@ header nav ul li a {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+}
+
+a.btn-primary:any-link {
+    color: #fff;
 }
 
 .btn-primary {
@@ -79,9 +83,14 @@ header nav ul li a {
     background-color: #61b6ac;
 }
 
+a:any-link {
+    color: #00796B;
+    text-decoration: none;
+}
+
 main {
-    min-height: 80vh;
-    margin-top: 150px;
+    min-height: 75vh;
+    margin-top: 120px;
 }
 
 section.banner {
@@ -141,9 +150,17 @@ section.desenvolvimento .container,
 section.marketing .container,
 section.consultoria-ux .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 40px 0;
+}
+
+section.desenvolvimento .container .texto,
+section.marketing .container .texto,
+section.consultoria-ux .container .texto {
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
 }
 
 section.marketing .container {
@@ -234,12 +251,28 @@ main h1 {
 @media (max-width: 900px) {
 
     section.banner .container,
-    section.introducao-sobre .container .intro {
+    section.introducao-sobre .container .intro,
+    section.desenvolvimento .container,
+    section.marketing .container,
+    section.consultoria-ux .container {
         flex-wrap: wrap;
     }
 
+    section.desenvolvimento .container .texto,
+    section.marketing .container .texto,
+    section.consultoria-ux .container .texto {
+        text-align: center;
+    }
+
+
+
     section.introducao-sobre {
         padding: 0 40px;
+    }
+
+    section.video-sobre iframe {
+        height: 400px;
+        padding: 40px;
     }
 
     section.banner .container .texto {
@@ -250,6 +283,22 @@ main h1 {
         padding: 0 40px 40px;
     }
 
+    main h1 {
+        text-align: center;
+    }
+
+    .contato {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contato form {
+        padding: 0 40px;
+    }
+
+    .contato .info {
+        padding: 15px 40px;
+    }
 }
 
 @media (max-width: 515px) {
@@ -262,4 +311,13 @@ main h1 {
         padding: 0;
         margin: 0;
     }
+
+    section.desenvolvimento .container,
+    section.marketing .container,
+    section.consultoria-ux .container {
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+
 }
